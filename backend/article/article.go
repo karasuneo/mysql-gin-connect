@@ -3,7 +3,7 @@ package article
 import (
 	"fmt"
 
-	"github.com/greenteabiscuit/next-gin-mysql/backend/lib"
+	"github.com/karasuneo/mysql-gin-connect/backend/lib"
 )
 
 type Article struct {

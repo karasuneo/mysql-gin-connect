@@ -5,11 +5,12 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/greenteabiscuit/next-gin-mysql/backend/article"
-	"github.com/greenteabiscuit/next-gin-mysql/backend/handler"
-	"github.com/greenteabiscuit/next-gin-mysql/backend/lib"
-	"github.com/greenteabiscuit/next-gin-mysql/backend/user"
+
 	"github.com/joho/godotenv"
+	"github.com/karasuneo/mysql-gin-connect/backend/article"
+	"github.com/karasuneo/mysql-gin-connect/backend/handler"
+	"github.com/karasuneo/mysql-gin-connect/backend/lib"
+	"github.com/karasuneo/mysql-gin-connect/backend/user"
 
 	"github.com/gin-contrib/cors"
 )

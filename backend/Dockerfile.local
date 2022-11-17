@@ -1,4 +1,7 @@
-FROM golang:1.15.2
+# goバージョン
+FROM golang:1.19.3-alpine
+# アップデートとgitのインストール
+RUN apk add --update &&  apk add git
 COPY . /go/src/sample
 WORKDIR /go/src/sample
 RUN go get -u github.com/cosmtrek/air

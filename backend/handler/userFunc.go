@@ -3,7 +3,7 @@ package handler
 import (
 	"net/http"
 
-	"github.com/greenteabiscuit/next-gin-mysql/backend/user"
+	"github.com/karasuneo/mysql-gin-connect/backend/user"
 
 	"github.com/gin-gonic/gin"
 )
