@@ -47,17 +47,7 @@ func NewSQLHandler() *SQLHandler {
 		if err != nil {
 			panic(err)
 		}
-	} /*else {
-	    var (
-	        instanceConnectionName = os.Getenv("DB_CONNECTION_NAME") // e.g. 'project:region:instance'
-	    )
-	    dbURI := fmt.Sprintf("%s:%s@unix(/cloudsql/%s)/%s?parseTime=true", user, password, instanceConnectionName, database)
-	    // dbPool is the pool of database connections.
-	    db, err = gorm.Open(mysql.Open(dbURI), &gorm.Config{})
-	    if err != nil {
-	        panic(err)
-	    }
-	}*/
+	}
 
 	sqlDB, _ := db.DB()
 	//コネクションプールの最大接続数を設定。

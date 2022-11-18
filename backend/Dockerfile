@@ -11,7 +11,7 @@
 FROM golang:1.19.3-alpine
 RUN apk add --update &&  apk add git
 RUN mkdir /go/src/app
-WORKDIR /go/src/sample
+WORKDIR /go/src/app
 # ホストのファイルをコンテナの作業ディレクトリに移行
 ADD . /go/src/app
 # アップデートとgitのインストール
