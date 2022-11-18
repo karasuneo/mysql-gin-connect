@@ -10,8 +10,10 @@
 
 FROM golang:1.19.3-alpine
 RUN apk add --update &&  apk add git
-COPY . /go/src/sample
+RUN mkdir /go/src/app
 WORKDIR /go/src/sample
+# ホストのファイルをコンテナの作業ディレクトリに移行
+ADD . /go/src/app
 # アップデートとgitのインストール
 # RUN apk add --update &&  apk add git
 # RUN go get -u github.com/cosmtrek/air
